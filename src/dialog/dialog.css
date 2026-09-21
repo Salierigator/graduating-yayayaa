@@ -1,0 +1,60 @@
+.dialog {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  background: transparent;
+}
+
+.dialog-box {
+  width: min(92vw, 360px);
+  font: 14px Tahoma, Verdana, sans-serif;
+  color: var(--black);
+  background: var(--silver);
+  border: 3px outset var(--white);
+  box-shadow: 4px 4px 0 var(--black);
+}
+
+.dialog-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 4px 3px 8px;
+  font-weight: bold;
+  color: var(--white);
+  background: linear-gradient(to right, var(--navy), #1084d0);
+}
+
+.dialog-title .btn {
+  padding: 0 6px;
+  font: bold 12px Tahoma, sans-serif;
+  border-width: 2px;
+}
+
+.dialog-body {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 16px;
+  text-align: left;
+}
+
+.dialog-icon {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  font: bold 24px/28px var(--font-times);
+  text-align: center;
+  color: var(--white);
+  background: var(--red);
+  border: 2px solid var(--black);
+  border-radius: 50%;
+}
+
+.dialog-ok {
+  display: block;
+  margin: 0 auto 12px;
+  min-width: 80px;
+  font-family: Tahoma, sans-serif;
+}

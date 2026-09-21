@@ -1,0 +1,22 @@
+:root {
+  --blue: #0000ff;
+  --red: #ff0000;
+  --yellow: #ffff00;
+  --lime: #00ff00;
+  --magenta: #ff00ff;
+  --cyan: #00ffff;
+  --black: #000000;
+  --white: #ffffff;
+  --paper: #ffffcc;
+  --silver: #c0c0c0;
+  --navy: #000080;
+  --link: #0000ee;
+
+  --font-comic: 'Comic Sans MS', 'Pangolin', cursive;
+  --font-impact: 'Anton', Impact, sans-serif;
+  --font-times: 'Times New Roman', Times, serif;
+  --font-mono: 'Courier New', Courier, monospace;
+
+  --strobe: 1s;
+  --blink: 1s;
+}

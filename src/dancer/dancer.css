@@ -1,0 +1,41 @@
+.stage {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 8px;
+  margin: 24px 0;
+}
+
+.dancer {
+  width: min(28vw, 180px);
+}
+
+.dancer.spin {
+  width: min(36vw, 240px);
+  animation: spin 1.2s linear infinite;
+}
+
+.dancer.bounce {
+  animation: bounce 0.5s ease-in infinite alternate;
+  transform-origin: bottom;
+}
+
+.dancer.late {
+  animation-delay: -0.5s;
+  scale: -1 1;
+}
+
+@keyframes spin {
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(-40px) scaleY(1.1);
+  }
+  to {
+    transform: translateY(0) scaleY(0.8) scaleX(1.15);
+  }
+}

@@ -1,0 +1,15 @@
+.spark {
+  position: fixed;
+  z-index: 30;
+  pointer-events: none;
+  font: bold 20px var(--font-mono);
+  translate: -50% -50%;
+  animation: fall 0.8s linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(60px) rotate(180deg);
+    opacity: 0;
+  }
+}

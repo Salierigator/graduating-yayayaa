@@ -1,0 +1,25 @@
+.rainbow span {
+  animation: rainbow 1.5s steps(6) infinite;
+  animation-delay: calc(var(--i) * -0.1s);
+}
+
+@keyframes rainbow {
+  0% {
+    color: var(--red);
+  }
+  17% {
+    color: #ff8800;
+  }
+  33% {
+    color: var(--yellow);
+  }
+  50% {
+    color: var(--lime);
+  }
+  67% {
+    color: var(--cyan);
+  }
+  83% {
+    color: var(--magenta);
+  }
+}
