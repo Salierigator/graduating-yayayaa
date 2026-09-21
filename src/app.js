@@ -2,7 +2,7 @@ import { envelope } from './envelope/envelope.js';
 import { dialog } from './dialog/dialog.js';
 import { rainbow } from './rainbow/rainbow.js';
 import { trail } from './trail/trail.js';
-import { runaway } from './runaway/runaway.js';
+import { swap } from './swap/swap.js';
 import { counter } from './counter/counter.js';
 import { music } from './music/music.js';
 import { safe } from './safe/safe.js';
@@ -19,7 +19,7 @@ envelope($('#envelope'), () => {
   $('#page').hidden = false;
   document.querySelectorAll('.rainbow').forEach(rainbow);
   counter($('#counter .counter-digits'));
-  runaway($('#no'));
+  swap($('#yes'), $('#no'));
   setTimeout(() => dialog('Chúc mừng!', 'Bạn là người may mắn thứ 1.000.000 được mời dự lễ tốt nghiệp của tôi. Bấm OK để được gặp tôi.'), 700);
 });
 
