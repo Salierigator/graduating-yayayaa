@@ -20,7 +20,7 @@ envelope($('#envelope'), () => {
   document.querySelectorAll('.rainbow').forEach(rainbow);
   counter($('#counter .counter-digits'));
   runaway($('#no'));
-  setTimeout(() => dialog('Chúc mừng!!!', 'Bạn là người may mắn thứ 1.000.000 được mời dự lễ tốt nghiệp của tôi. Bấm OK để nhận thưởng!!!'), 700);
+  setTimeout(() => dialog('Chúc mừng!', 'Bạn là người may mắn thứ 1.000.000 được mời dự lễ tốt nghiệp của tôi. Bấm OK để được gặp tôi.'), 700);
 });
 
 $('#yes').addEventListener('click', () => dialog('Thông báo', 'Yêu bạn nhất đó <3 <3 😘 💋 Hẹn gặp bạn ngày 27/09 nhé 🌹 &lt;3'));
