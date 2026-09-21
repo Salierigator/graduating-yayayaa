@@ -1,0 +1,69 @@
+.pet-cancan {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  height: clamp(110px, 34vw, 200px);
+}
+
+.peek {
+  position: relative;
+}
+
+.peek img {
+  position: absolute;
+}
+
+.peek + .info,
+.peek + .rsvp {
+  position: relative;
+  z-index: 1;
+}
+
+.peek-baby {
+  height: 72px;
+}
+
+.peek-baby img {
+  right: 16px;
+  bottom: -34px;
+  height: 96px;
+}
+
+.peek-hand {
+  height: 200px;
+}
+
+.peek-hand img {
+  left: 50%;
+  bottom: -44px;
+  height: 250px;
+  translate: -50% 0;
+}
+
+.party {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 4px;
+  height: clamp(130px, 40vw, 200px);
+  margin: 24px 0 -32px;
+}
+
+.party img {
+  max-height: 100%;
+}
+
+.party .tall {
+  max-height: none;
+  height: 150%;
+}
+
+@media (min-width: 600px) {
+  .peek-hand {
+    height: 260px;
+  }
+
+  .peek-hand img {
+    height: 320px;
+  }
+}
