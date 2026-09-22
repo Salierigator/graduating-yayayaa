@@ -13,6 +13,7 @@
   border: 4px solid var(--black);
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   justify-content: flex-end;
   gap: 6px;
   padding: 0 0 12px;
